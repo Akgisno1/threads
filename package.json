@@ -11,6 +11,9 @@
   "dependencies": {
     "@clerk/nextjs": "^5.1.5",
     "@uploadthing/react": "^6.6.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-tailwindcss": "^3.17.3",
     "mongoose": "^8.4.3",
     "next": "14.2.4",
     "react": "^18",
