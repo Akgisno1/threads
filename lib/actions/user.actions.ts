@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import User from "../models/user.model";
 
-import { connecToDB } from "../mongoose";
+import { connectToDB } from "../mongoose";
 
 interface Props {
   userId: string;
@@ -23,7 +23,7 @@ export async function updateUser({
   path,
 }: Props) {
   try {
-    await connecToDB();
+    await connectToDB();
     await User.findOneAndUpdate(
       { id: userId },
       {
@@ -38,6 +38,18 @@ export async function updateUser({
     if (path === "/profile/edit") {
       revalidatePath(path);
     }
+  } catch (error) {
+    throw error;
+  }
+}
+export async function fetchUser(userId: string) {
+  try {
+    await connectToDB();
+    return await User.findOne({ id: userId });
+    // .populate({
+    //     path:'communities'
+    //     model:Community
+    // })
   } catch (error) {
     throw error;
   }
