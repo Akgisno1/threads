@@ -3,7 +3,7 @@ import { dark } from "@clerk/themes";
 import Image from "next/image";
 import Link from "next/link";
 
-function Topbar() {
+function TopBar() {
   return (
     <nav className="topbar">
       <Link href="/" className="flex items-center gap-4">
@@ -40,4 +40,4 @@ function Topbar() {
   );
 }
 
-export default Topbar;
+export default TopBar;
