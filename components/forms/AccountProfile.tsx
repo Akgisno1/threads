@@ -65,6 +65,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
         values.profile_photo = imgRes[0].fileUrl;
       }
     }
+
     await updateUser({
       name: values.name,
       path: pathname,
@@ -144,7 +145,6 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
               </FormControl>
-              <FormMessage />
             </FormItem>
           )}
         />
