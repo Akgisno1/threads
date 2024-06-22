@@ -9,7 +9,7 @@ import LeftSidebar from "@/components/shared/LeftSidebar";
 
 import RightSidebar from "@/components/shared/RightSidebar";
 import Topbar from "@/components/shared/Topbar";
-import Bottombar from "@/components/shared/Bottombar";
+import BottomBar from "@/components/shared/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,7 +42,7 @@ export default function RootLayout({
             <RightSidebar />
           </main>
 
-          <Bottombar />
+          <BottomBar />
         </body>
       </html>
     </ClerkProvider>
