@@ -7,8 +7,8 @@ import { dark } from "@clerk/themes";
 import "../globals.css";
 import LeftSidebar from "@/components/shared/LeftSidebar";
 import RightSidebar from "@/components/shared/RightSidebar";
-import Topbar from "@/components/shared/Topbar";
-import BottomBar from "@/components/shared/Bottombar";
+import Topbar from "@/components/shared/TopBar";
+import BottomBar from "@/components/shared/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
