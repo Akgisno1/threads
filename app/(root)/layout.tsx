@@ -6,7 +6,7 @@ import { dark } from "@clerk/themes";
 
 import "../globals.css";
 import LeftSidebar from "@/components/shared/LeftSidebar";
-import RightSidebar from "@/components/shared/RightSidebar";
+// import RightSidebar from "@/components/shared/RightSidebar";
 import Topbar from "@/components/shared/Topbar";
 import BottomBar from "@/components/shared/Bottombar";
 
@@ -38,7 +38,7 @@ export default function RootLayout({
               <div className="w-full max-w-4xl">{children}</div>
             </section>
             {/* @ts-ignore */}
-            <RightSidebar />
+            {/* <RightSidebar /> */}
           </main>
 
           <BottomBar />
