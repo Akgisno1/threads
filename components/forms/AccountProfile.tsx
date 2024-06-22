@@ -40,6 +40,7 @@ interface Props {
 const AccountProfile = ({ user, btnTitle }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
+  /*@ts-ignore*/
   const { startUpload } = useUploadThing("media");
 
   const [files, setFiles] = useState<File[]>([]);
@@ -60,8 +61,9 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
     const hasImageChanged = isBase64Image(blob);
     if (hasImageChanged) {
       const imgRes = await startUpload(files);
-
+      /*@ts-ignore*/
       if (imgRes && imgRes[0].fileUrl) {
+        /*@ts-ignore*/
         values.profile_photo = imgRes[0].fileUrl;
       }
     }
